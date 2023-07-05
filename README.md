@@ -15,5 +15,8 @@ funcionalidades/páginas requeridas são apresentadas a seguir.
 - Usei HTML, CSS e JavaScript para criar um design moderno e responsivo.
 - Incluí seções como "Sobre Mim", "Habilidades", "Experiência" e "Projetos".
 
-#### Contato
+#### Live
+O site está em Live: https://rick-porto.github.io/Site-Portfolio-Rick-Porto
+
+##### Contato
 https://www.linkedin.com/in/rick-porto-a5003917b/
