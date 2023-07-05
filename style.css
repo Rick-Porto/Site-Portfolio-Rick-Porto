@@ -124,7 +124,6 @@ main {
 }
 
 main .sobre {
-    margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -256,3 +255,55 @@ main .sobre {
     }
 }
 
+/* MAKING SITE RESPONSIVE */
+@media(max-width: 990px) {
+    .section-div img {
+        display: none;
+    }
+
+    .section-div {
+        background-image: url(images/Foto\ Profissional.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 30px 70px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header i {
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    header .menu.ativado {
+        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+        position: absolute;
+        display: grid;
+        top: 80px;
+        color: white;
+        z-index: 1;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 20px;
+        animation: sobeSecao .8s ease-in-out forwards;
+    }
+}
+
+@media(max-width: 990px) {
+    .sobre img {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .sobre_conteudo {
+        grid-column: 1/-1;
+    }
+}
