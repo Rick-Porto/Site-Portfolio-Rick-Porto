@@ -1,23 +1,15 @@
-function ativaLetra(elemento){
-        const arrTexto = elemento.innerHTML.split('');
-        elemento.innerHTML = '';
-        arrTexto.forEach((Letra, i) =>{
+function typing(element){
+        const arrText = element.innerHTML.split('');
+        element.innerHTML = '';
+        arrText.forEach((Leter, i) =>{
             setTimeout(()=>{
-                elemento.innerHTML += Letra;
+                element.innerHTML += Leter;
             }, 75 * i);
         });
     }
 
-    const titulo = document.querySelector('.letreiro');
-    ativaLetra(titulo);
+const titulo = document.querySelector('.letreiro');
+typing(titulo);
 
 
-const ativaMenu = document.querySelector('.bi-list');
-    const navMenu = document.querySelector('header .menu')
-
-    ativaMenu.addEventListener('click', ()=>{
-        ativaMenu.classList.toggle('bi-x')
-        navMenu.classList.toggle('ativado')
-    })
-
-
+  

@@ -35,35 +35,6 @@ header span {
     color: white;
 }
 
-/* MENU */
-header .menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-header .menu li a {
-    color: #fff;
-    width: 0px;
-    height: 0px;
-    font-size: 1.3rem;
-}
-
-header .menu li a::after {
-    content: '';
-    width: 0px;
-    height: 0px;
-    display: block;
-    border-bottom: 4px solid transparent;
-    transition: .9s;
-}
-
-header .menu li a:hover::after {
-    width: 100%;
-    height: 0px;
-    padding: 0px;
-    border-bottom: 4px solid #dc3545;
-}
 
 /* RESUME */
 .section-div {
@@ -577,10 +548,13 @@ main .sobre {
     background-color: #222;
     text-decoration: none;
     padding: 20px 40px;
-    justify-self: center;
-    border-radius: 3px;
+    border-radius: 1px;
     color: #707070;
     border: 1px solid #333;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 /* CONTACT */
