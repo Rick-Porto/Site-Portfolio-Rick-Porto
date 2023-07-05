@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -15,9 +16,9 @@
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutme">Sobre Mim</a></li>
-                <li><a href="#formation">Formação</a></li>
+                <li><a href="#services">Formação</a></li>
                 <li><a href="#profissional">Profissional</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#projects">Portfólio</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <i class="bi bi-list"></i> 
@@ -29,12 +30,12 @@
             <h2>Hello World! I'm</h2>
             <h2 class="letreiro">Front-End Developer</h2>
             <p>Um profissional apaixonado por tecnologia e programação. Sou comprometido, colaborativo e motivado a enfrentar novos desafios. Estou pronto para contribuir com minha expertise e entusiasmo em projetos inovadores.</p>
-            <a href="#">Download Curriculo</a>
+            <a href="resume/Currículo - Rick Porto de Melo Silva.pdf">Download Curriculo</a>
         </div>
         <img src="images/Foto Profissional.png" alt="Rick Foto Profissional">
     </section>
     <main>
-        <article aria-label="sobre mim" class="sobre">
+        <article aria-label="sobre mim" class="sobre" id="aboutme">
             <div class="sobre_titulo">
             <h1>Sobre Mim</h1>
             <p>Perfil Profissional</p>
@@ -63,7 +64,8 @@
     </article>
 </main>
 
-<section class="services">
+
+<section class="services" id="services">
     <div class="sobre_titulo">
         <h1>Formação e Curso</h1>
         <p>Formações e cursos que enriqueceram minha trajetória profissional, ampliando meus conhecimentos e habilidades, me preparando para os desafios do mercado e me impulsionando a buscar constantemente o crescimento pessoal e profissional.</p>
@@ -96,7 +98,7 @@
     </div>
 </section>
 
-    <section class="my_resume">
+    <section class="my_resume" id="profissional">
         <div class="sobre_titulo">
             <h1>Atuação</h1>
             <p>No momento estou em busca de uma oportunidade de estágio para aplicar minha formação no desenvolvimento de soluções críticas e contribuir para o sucesso da empresa. Possuo facilidade de aprendizado e boa comunicação, e estou empenhado em aprimorar minhas habilidades para desenvolver projetos de sucesso.</p>
@@ -173,41 +175,83 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="sobre_titulo">
-            <h1>My Projects</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h1>Projetos</h1>
+            <p>Explorando a criatividade e a inovação em cada projeto, trago soluções impactantes e resultados excepcionais.</p>
             <div aria-label="Seção apenas de ilustrações de botões">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-        <div class="project_models">
-            <ul class="project_navegacao" aria-label="Navegação entre modelos expecificos de projetos">
-                <li class="all">All</li>
-                <li class="design">Design</li>
-                <li class="graphic">Graphic</li>
-                <li class="website">Websites</li>
-            </ul>
-        </div>
-        <div class="projects_armazenamento">
-            <ul aria-label="Navegação de projetos e websites">
-                <li id="design"><img src="imgs/ecommerce.jpeg" alt="Site criado para ser um ecommerce geral"></li>
-                <li id="design"><img src="imgs/facebook.jpeg" alt="Clone da tela de login do facebook"></li>
-                <li id="graphic"><img src="imgs/instagram.jpeg" alt="Clone da tela de login do instagram"></li>
-                <li id="graphic"><img src="imgs/iphone.jpeg" alt="Landing page da Apple"></li>
-                <li id="website"><img src="imgs/leagueoflegends.jpeg" alt="Tela de cadastro de League of legends">
+        <div class="my_projects">
+            <ul aria-label="menu 3">
+                <a target="_blank" href="https://github.com/Rick-Porto/chess-java">
+                <li>
+                    <h3>Xadrez no Java</h3> 
+                    <img src="images/chess-playing-hand.webp" alt="Colégio">
+                    <p>Um programa em java que simula uma partida de xadrez. Um projeto de curso de Java COMPLETO de Nelio Alves.</p>
+                </li></a>
+
+                <a target="_blank" href="https://github.com/Rick-Porto/ipva">
+                <li>
+                    <h3>IPVA</h3> 
+                    <img src="images/O-que-e-IPVA.jpg" alt="Faculdade">    
+                    <p>Código na Linguagem C, que reproduz um cadastro de veículos e faz o calculo do IPVA para cada registro.</p>
                 </li>
-                <li id="website"><img src="imgs/marioword.jpeg" alt="Landing Page do filme Mario Word"></li>
-                <li id="website"><img src="imgs/netflix.jpeg" alt="Clone da Netflix"></li>
-                <li id="website"><img src="imgs/sonic.jpeg" alt="Landing Page do filme Sonic"></li>
+                </a>
             </ul>
         </div>
-        <a href="#">Load More Portfólio</a>
+        <a target="_blank" href="https://github.com/Rick-Porto">Mais Códigos do Portfólio</a>
     </section>
+   
+    <section class="contact" id="contact">
+        <div class="sobre_titulo">
+        <h1>Contato</h1>
+        <p>Vamos conectar? Estou ansioso para ouvir suas ideias e discutir possíveis colaborações. Entre em contato comigo e vamos iniciar uma conversa.</p>
+        <div aria-label="Seção apenas de ilustrações de botões">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+          <form>
+            <div class="form-group">
+              <label class="lead" for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label class="lead" for="email">E-mail:</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+              <label class="lead" for="mensagem">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-
+    <footer>
+        <div class="sobre_titulo">
+            <h1>Dev Rick</h1>
+            <p>Programador apaixonado por desafios, desenvolvimento de soluções e inovação.</p>
+        </div>
+        <nav aria-label="navegação de links sociais">
+            <ul class="footer_sociais">
+                <a target="_blank" a href="https://www.facebook.com/rick.porto.10"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a target="_blank" a href="https://www.linkedin.com/in/rick-porto-a5003917b/"><li><i class="fab fa-linkedin-in"></i></li></a>
+                <a target="_blank" a href="https://www.instagram.com/rick_portoo/"><li><i class="fab fa-instagram"></i></li></a>
+                <a target="_blank" a href="https://github.com/Rick-Porto"><li><i class="fab fa-github-alt"></i></li></a>
+              </ul>
+        </nav>
+        <p class="footer_comercial">Todos os direitos reservados a Rick Porto &copy; - 2023</p>
+    </footer>
+    
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

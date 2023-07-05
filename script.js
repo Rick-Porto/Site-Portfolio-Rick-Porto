@@ -1,5 +1,4 @@
-function digitando(){
-    function ativaLetra(elemento){
+function ativaLetra(elemento){
         const arrTexto = elemento.innerHTML.split('');
         elemento.innerHTML = '';
         arrTexto.forEach((Letra, i) =>{
@@ -11,7 +10,7 @@ function digitando(){
 
     const titulo = document.querySelector('.letreiro');
     ativaLetra(titulo);
-}
+
 
 const ativaMenu = document.querySelector('.bi-list');
     const navMenu = document.querySelector('header .menu')
