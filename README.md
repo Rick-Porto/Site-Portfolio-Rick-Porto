@@ -16,7 +16,7 @@ funcionalidades/páginas requeridas são apresentadas a seguir.
 - Incluí seções como "Sobre Mim", "Habilidades", "Experiência" e "Projetos".
 
 #### Live
-O site está em Live: https://rick-porto.github.io/Site-Portfolio-Rick-Porto
+O site está em Live: 
 
 ##### Contato
 https://www.linkedin.com/in/rick-porto-a5003917b/
