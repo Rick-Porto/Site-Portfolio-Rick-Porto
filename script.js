@@ -24,6 +24,36 @@ function storeMessage(message) {
     localStorage.setItem('messages', JSON.stringify(messages));
 }
 
+// Function to display the messages in the listing page
+function displayMessages() {
+    // Retrieve messages from local storage
+    let messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+    // Select the message list element
+    const messageList = document.getElementById('messageList');
+
+    // Clear the existing content
+    messageList.innerHTML = '';
+
+    // Display each message in the list
+    messages.forEach((message, index) => {
+        const messageItem = document.createElement('div');
+        messageItem.innerHTML = `
+        <h3>Message ${index + 1}</h3>
+        <p><strong>Name:</strong> ${message.name}</p>
+        <p><strong>Email:</strong> ${message.email}</p>
+        <p><strong>Message:</strong> ${message.message}</p>
+      `;
+        messageList.appendChild(messageItem);
+    });
+}
+
+// Function to clear messages from local storage
+function clearMessages() {
+    localStorage.removeItem('messages');
+    displayMessages(); // Update the displayed messages after clearing
+}
+
 // Event listener for form submission
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function (e) {
@@ -44,4 +74,9 @@ contactForm.addEventListener('submit', function (e) {
     contactForm.reset();
 });
 
+// Event listener for clearing messages
+const clearMessagesButton = document.getElementById('clearMessages');
+clearMessagesButton.addEventListener('click', clearMessages);
 
+// Display the messages on page load
+displayMessages();
