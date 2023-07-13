@@ -249,24 +249,18 @@
         <a target="_blank" a href="https://www.instagram.com/rick_portoo/"><li><i class="fab fa-instagram"></i></li></a>
         <a target="_blank" a href="https://github.com/Rick-Porto"><li><i class="fab fa-github-alt"></i></li></a>
       </ul>
-          <form>
-            <div class="form-group">
-              <label class="lead" for="nome">Nome:</label>
-              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
+          <form id="contactForm">
+              <label class="lead" for="name">Nome:</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
               <label class="lead" for="email">E-mail:</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
-            </div>
-            <div class="form-group">
-              <label class="lead" for="mensagem">Mensagem:</label>
-              <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
-            </div>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+              <label class="lead" for="message">Mensagem:</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem" required></textarea>
             <div class="text-center">
-              <button type="submit" class="btn">Enviar</button>
+                <button type="submit">Submit</button>
+                <button type="button" id="clearMessages">Clear Messages</button>
             </div>
-          </form>
-        </div>
+        <div id="messageList"></div>
       </section>
 
     <footer>
