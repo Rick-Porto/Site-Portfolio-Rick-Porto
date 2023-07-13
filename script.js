@@ -22,6 +22,9 @@ function storeMessage(message) {
 
     // Store the updated array in local storage
     localStorage.setItem('messages', JSON.stringify(messages));
+
+    // Display the messages
+    displayMessages();
 }
 
 // Function to display the messages in the listing page
@@ -39,10 +42,9 @@ function displayMessages() {
     messages.forEach((message, index) => {
         const messageItem = document.createElement('div');
         messageItem.innerHTML = `
-        <h3>Message ${index + 1}</h3>
-        <p><strong>Name:</strong> ${message.name}</p>
-        <p><strong>Email:</strong> ${message.email}</p>
-        <p><strong>Message:</strong> ${message.message}</p>
+        <h3>Mensagem de ${message.name}</h3>
+        <p><strong>E-mail:</strong> ${message.email}</p>
+        <p>${message.message}</p>
       `;
         messageList.appendChild(messageItem);
     });
@@ -67,7 +69,7 @@ contactForm.addEventListener('submit', function (e) {
     // Create a message object
     const messageObj = { name, email, message };
 
-    // Store the message
+    // Store the message and display messages
     storeMessage(messageObj);
 
     // Clear the form
@@ -78,5 +80,4 @@ contactForm.addEventListener('submit', function (e) {
 const clearMessagesButton = document.getElementById('clearMessages');
 clearMessagesButton.addEventListener('click', clearMessages);
 
-// Display the messages on page load
 displayMessages();
